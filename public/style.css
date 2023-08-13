@@ -1,0 +1,117 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#video-grid{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+video{
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+    padding: 2px;
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+}
+
+.left{
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+}
+
+.right{
+    flex: 0.2;
+}
+
+.main__videos{
+    flex-grow: 1;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__controls{
+    display: flex;
+    background-color: rgb(45, 44, 44);
+    color: rgb(224, 227, 227);
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.block{
+    display: flex;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    min-width: 80px;
+    cursor: pointer;
+}
+
+.button i{
+    font-size: 25px;
+}
+
+.button:hover{
+    background-color: rgb(163, 209, 236);
+    color: rgb(241, 6, 6);
+    border-radius: 5px;
+}
+
+.leave_meeting{
+    color: red;
+
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(34, 34, 34);
+    border-left: 1px solid rgb(57, 56, 56);
+}
+
+.main__header{
+    color: azure;
+    text-align: center;
+}
+
+.window{
+    flex-grow: 1;
+    overflow-y: scroll;
+}
+
+.container{
+    padding: 22px 12px;
+    display: flex;
+}
+
+.container input{
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.message{
+    color: azure;
+    list-style: none;
+}
+
+.unmute .stop{
+    color: red;
+}
